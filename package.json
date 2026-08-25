@@ -1,0 +1,36 @@
+{
+  "name": "oauth-connections",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "rollup src/main.js -f es -o dist/index.js && rollup src/main.js -f cjs -o dist/index.cjs",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy --all",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.260.0",
+    "constructs": "^10.5.0"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.1129.0",
+    "jest": "^30",
+    "esbuild": "^0.25.0",
+    "aws-cdk-lib": "^2.260.0",
+    "constructs": "^10.5.0",
+    "rollup": "^4.63.0"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  }
+}
