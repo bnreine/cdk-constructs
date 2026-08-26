@@ -1,6 +1,9 @@
 {
-  "name": "oauth-connections",
+  "name": "cdk-constructs",
   "version": "0.1.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "private": true,
   "engines": {
     "node": ">=22"
