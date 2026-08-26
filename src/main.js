@@ -1,5 +1,5 @@
-// import {hey} from 'something'
-import {LambdaRouteConnection} from './lambda-route-connection.js';
+import {LambdaRouteConnector} from './lambda-route-connector.js';
+import {LambdaRouteConnector2} from './lambda-route-connector2.js';
 
-// export const you = hey
-export const LambdaRouteConnector = LambdaRouteConnection
+export const LambdaRouteConnection = LambdaRouteConnector
+export const LambdaRouteConnection2 = LambdaRouteConnector2

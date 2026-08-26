@@ -1,8 +1,9 @@
-import { Construct } from 'constructs';
+import { Construct } from 'constructs'
 import * as apigw from 'aws-cdk-lib/aws-apigatewayv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-class LambdaRouteConnection extends Construct {
+
+export class LambdaRouteConnector2 extends Construct {
     constructor(scope, id, props) {
         super(scope, id);
 
@@ -41,9 +42,5 @@ class LambdaRouteConnection extends Construct {
     }
 }
 
-// import {hey} from 'something'
 
-// export const you = hey
-const LambdaRouteConnector = LambdaRouteConnection;
 
-export { LambdaRouteConnector };

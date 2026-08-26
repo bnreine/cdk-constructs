@@ -3,7 +3,7 @@ import * as apigw from 'aws-cdk-lib/aws-apigatewayv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
 
-export class LambdaRouteConnection extends Construct {
+export class LambdaRouteConnector extends Construct {
     constructor(scope, id, props) {
         super(scope, id);
 
